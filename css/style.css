@@ -1,119 +1,98 @@
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
 
-/*LEFT-SIDE STYLES*/
-
-.left{
-  background-color: #13161a;
+/*LANDING PAGE*/
+.landing{
   height: 100vh;
-  color:#b2b6bb;
-  font-family: 'Rubik', sans-serif;
+  background: #1c2841;
+  color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
 }
-.left img{
-  border-radius: 80%;
-  margin-top: 30px;
-  margin-left: 30px;
+.my-social-links{
+  margin-top:15%;
 }
-.left h5{
-  margin-left: 10px;
-  margin-top: 20px;
+.twitter-link, .github-link, .linkedIn-link{
+padding: 30px;
+font-size: 200%;
 }
-.left h6{
-  margin-left: 10px;
-  margin-bottom: 20px;
+.brief-summary p{
+  -webkit-transform: rotate(-90deg); 
+   -moz-transform: rotate(-90deg); 
+   margin-top: 60%;
+   margin-left: 0;
+   font-family: 'Jomolhari', serif;
+}
+.intro h2{
+  font-size: 600%;
+  font-weight: 600;
+  margin-top: 15%;
+  font-family: 'Roboto Mono', monospace;
+}
+.intro i{
+  font-size: 20%;
+  color: red;
 }
 .nav{
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-gap: 40px;
-  margin-left: 40px;
- 
+  -webkit-transform: rotate(-90deg); 
+   -moz-transform: rotate(-90deg); 
+   margin-top: 250%;
+   padding: 0;
 }
-.nav .home, .nav .about, .nav .contact-link{
-  color:#b2b6bb;
-  font-size: 150%;
-  text-decoration: none;
-  
-}
-
-.left footer{
-  margin-top: 30px;
-}
-
-.left footer a i{
-  margin-left:20px;
-
-}
-.white{
-  color: white;
-}
-/*LANDING PAGE STYLES*/
-.right{
-  padding: 0;
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
-}
-.landing{
-  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
-  padding-left:15px;
-  margin:none;
-  height: 100vh;
-  color:#0e1112;
-  font-family: 'McLaren', cursive;
-}
-#logo{
-  margin-left: 0;
-  display: none;
-}
-#landing-intro{
-  margin-top: 20%;
-}
-#landing-intro button{
-  background: #79c879;
-  border: none;
-  border-radius: 10%;
-  padding: 20px;
-  outline: none;
-}
-
-.decagon-hide{
-  display: none;
+#home, #about-link, #contact-link{
+  padding: 30px;
 }
  /*ABOUT STYLES*/
-.about-page{
-  background: url(../img/dice-aboutPage-image.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgb(4, 19, 4);
+ #about{
+  box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
+  background: #1c2841;;
+  color: #ffffff;
   height: 100vh;
-  color:white;
-  padding:20px;
+ }
+.display-5{
+  text-align: center;
+  font-weight: 800;
+  font-size: 200%;
+  padding-top: 5%;
+  font-family: 'Roboto Mono', monospace;
 }
-
-/*FORM HEADER STYLES*/
-.wrapper{
+.about-details{
+  margin-top: 7%;
+}
+.about-details p{
+  padding-left: 10px;
+  font-family: 'Jomolhari', serif;
+}
+.about-details ul{
+  margin-left: 25%;
+}
+.about-details ul li{
+  list-style-type: none;
+}
+.about-details img{
+  border-radius: 50%;
+  margin-bottom: 20%;
+  margin-left: 25%;
+}
+.back h5{
+  color: #79c879;
+  text-decoration: underline;
+  padding-left: 20px;
+}
+  /* FORM STYLES */
+  .wrapper{
     box-shadow: 0 0 20px 0 rgba(72,94,116,0.7);
   }
   
-  .wrapper > *{
-    padding: 1em;
-  }
-  
-  .company-info{
-    background:#13161a;
-    color:#b2b6bb;
-  }
-  
-  .company-info h3, .company-info ul{
-    text-align: center;
-    margin:0 0 1rem 0;
-  }
-  
   .contact{
-    background:#d8dadd;
+    background:#1c2841;
+    color:#ffffff;
+    height: 100vh;
   }
   .hide{
     display:none;
   }
-  
-  /* FORM STYLES */
   .contact form{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,7 +118,6 @@
   }
   
   .contact form button{
-    background:#13161a;
     border:0;
     text-transform: uppercase;
   }
@@ -163,169 +141,62 @@
   
   /*TABLET SCREENS*/
   @media(max-width:1102px){
+    
     .nav{
-      margin-right: 20px;
+      -webkit-transform: rotate(-90deg); 
+       -moz-transform: rotate(-90deg); 
+       margin-top: 350%;
+       padding: 0;
     }
-   .landing{
-      background:url(../img/chibuzor-landinPage-image.jpg) no-repeat;
-      background-position: center;
-      background-size: 50%;
+    #home, #about-link, #contact-link{
+      padding: 20px;
     }
-    #landing-intro{
-      margin-top: 35%;
+    .intro h2{
+      font-size: 500%;
+      font-weight: 600;
+      margin-top: 15%;
     }
-    #logo{
-      margin-left: 0;
-      display: none;
-    }
-    .intro-image{
-      display:none;
-    }
-    .left img{
-      border-radius: 80%;
-      margin-top: 30px;
-      margin-left: 10px;
-    }
-    .left h5{
-      margin-left: 2px;
-      margin-top: 20px;
-    }
-    .left h6{
-      margin-left: 2px;
-      margin-bottom: 20px;
-    }
-    .nav{
-      display: grid;
-      grid-template-rows: 1fr;
-      grid-gap: 10px;
-      margin-left: 10px;
-    }
-    .nav a{
-      text-decoration: none;
-      outline: none;
-      font-weight: 400;
-    }
-    #landing-intro button{
-      padding: 10px;
-    }
-    #about p{
-      max-height: 100%;
-    }
-    footer{
-      margin-top: 30px;
-    }
-    
-    footer a i{
-      margin-left:10px;
-    
-    }
-    .alert-hide{
-      display: none;
-    }
-  
-    
   }
   /* SMALL SCREENS */
-@media(max-width:768px){
-  .landing{
-    background:url(../img/chibuzor-landinPage-image.jpg) no-repeat;
-    background-position: center;
-    background-size: 60%;
-    padding:20px;
-    margin:none;
-  }
-  #landing-intro{
-    margin-top: 40%;
-  }
-  #logo{
-    margin-left: 0;
-    display: inline;
-  }
-  .intro-image{
-    display:none;
-  }
-  .intro h1, .intro h3, .intro h5{
-    font-size: 150%;
-  }
-  .intro button{
-    font-size: 80%;
-  }
-  #about p{
-    font-size: 80%
-  }
+@media(max-width:765px){
   
-  .left{
-    display: none;
-   
+  .brief-summary p{
+    -webkit-transform: rotate(-90deg); 
+     -moz-transform: rotate(-90deg); 
+     margin-top: 15%;
+     margin-left: 80px;
   }
-  #landing-intro button{
-    padding: 0;
+  .intro h2{
+    font-size: 300%;
+    font-weight: 600;
+    margin-bottom: 70%;
   }
-  .hide{
-    display: block;
-  }
-  body{
-    padding: none;
-    margin: none;
-  }
-  .company-info{
-    display:none;
-  }
-  .alert-hide{
+  .page-links{
     display: none;
   }
-  /*FOOTER FOR SMALLER DEVICES*/
-  .small-footer{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    background: #13161a;
-    color: #b2b6bb;
-    padding:5px;
-}
-.small-footer li{
-  list-style: none;
-  margin-left: 5px;
-}
-  
-}
-/*SMALLER SCREEN*/
-@media(max-width:500px){
-  .landing{
-    background:url(../img/chibuzor-landinPage-image.jpg) no-repeat;
-    background-position: center;
-    background-size: 90%;
-    padding:20px;
-    margin:none;
+  .my-social-links{
+    display:none;
   }
-  
-  #landing-intro{
-    margin-top: 50%;
-    margin-left: 0;
+  .display-5{
+    padding-top: 0;
+  }
+  .about-details ul{
+    display:none;
+  }
+  .about-details p{
     padding-left: 0;
+    font-size: 90%;
   }
-  #logo{
-    margin: 0;
-    display: block;
-  }
-  #landing-intro button{
-    padding: 0;
-  }
-  #about p{
-    font-size: 80%
-  }
-  /*FOOTER FOR SMALLER DEVICES*/
   .small-footer{
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    display:block;
     background: #13161a;
-    color: #b2b6bb;
-    padding:1px;
-}
-.small-footer li{
-  list-style: none;
-  margin-left: 5px;
-}
+    color: #ffffff;
+  }
+  .footer-links{
+    margin-left:20%;
+  }
+  .footer-links a i{
+    padding:20px;
+  }
   
 }

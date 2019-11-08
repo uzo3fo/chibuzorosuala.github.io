@@ -50,21 +50,27 @@ $(document).ready(()=>{
     })
 //navigate to about page
 
-    $('.about').on('click', ()=>{
+    $('#about-link').on('click', ()=>{
         $('#about').show();
         $('.landing').hide();
         $('.wrapper').hide();
         $('.small-footer').hide();
     })
 //navigate to contact page
-    $('.contact-link').on('click', ()=>{
+    $('#contact-link').on('click', ()=>{
         $('.wrapper').show();
         $('.landing').hide();
         $('#about').hide();
         $('.small-footer').hide();
     })
 //navigate to home page
-    $('.home').on('click', ()=>{
+    $('#home').on('click', ()=>{
+        $('#about').hide();
+        $('.landing').show();
+        $('.wrapper').hide();
+        $('.small-footer').hide();
+    })
+    $('.back').on('click', ()=>{
         $('#about').hide();
         $('.landing').show();
         $('.wrapper').hide();
