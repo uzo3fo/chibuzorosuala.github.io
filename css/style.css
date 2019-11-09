@@ -141,7 +141,7 @@ font-size: 200%;
   
   /*TABLET SCREENS*/
   @media(max-width:1102px){
-    
+   
     .nav{
       -webkit-transform: rotate(-90deg); 
        -moz-transform: rotate(-90deg); 
@@ -159,6 +159,9 @@ font-size: 200%;
   }
   /* SMALL SCREENS */
 @media(max-width:765px){
+  #about{
+    display:block;
+  }
   
   .brief-summary p{
     -webkit-transform: rotate(-90deg); 
