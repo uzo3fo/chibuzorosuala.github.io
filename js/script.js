@@ -78,37 +78,25 @@ $(document).ready(()=>{
     })
     //navigation button animation
     //home
-    $('.home').on('mouseover', ()=>{
-       $('.home').animate({
-        "font-size" : "180%"
-    },1000);
+    $('#home').on('mouseover', ()=>{
+        $('#home').addClass('touch')
     })
-    $('.home').on('mouseleave', ()=>{
-        $('.home').animate({
-         "font-size" : "150%"
-     },1000);
+    $('#home').on('mouseleave', ()=>{
+        $('#home').removeClass('touch')
      })
      //about
-     $('.about').on('mouseover', ()=>{
-        $('.about').animate({
-         "font-size" : "180%"
-     },1000);
+     $('#about-link').on('mouseover', ()=>{
+        $('#about-link').addClass('touch')
      })
-     $('.about').on('mouseleave', ()=>{
-         $('.about').animate({
-          "font-size" : "150%"
-      },1000);
+     $('#about-link').on('mouseleave', ()=>{
+        $('#about-link').removeClass('touch')
       })
       //contact-link
-      $('.contact-link').on('mouseover', ()=>{
-        $('.contact-link').animate({
-         "font-size" : "180%"
-     },1000);
+      $('#contact-link').on('mouseover', ()=>{
+        $('#contact-link').addClass('touch')
      })
-     $('.contact-link').on('mouseleave', ()=>{
-         $('.contact-link').animate({
-          "font-size" : "150%"
-      },1000);
+     $('#contact-link').on('mouseleave', ()=>{
+        $('#contact-link').removeClass('touch')
       })
       //decagon button
       $('.decagon-button').on('click', event=>{
