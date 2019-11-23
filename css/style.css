@@ -4,7 +4,7 @@
 }
 /*#1c2841*/
 /*LANDING PAGE*/
-.landing, .decagon{
+.landing{
   height: 100vh;
   background-color:#f5e617;
   color: #0e1f10;
@@ -68,16 +68,8 @@ font-size: 200%;
   animation-duration: 6s;
   animation-delay: 5s;
 }
-.decagon-button{
-  background: #79c879;
-  border: none;
-  border-radius: 10%;
-  padding: 20px;
-  outline: none;
-}
-
-.decagon-hide{
-  display: none;
+.small-footer{
+  display:none;
 }
  /*ABOUT STYLES*/
  #about{
