@@ -4,7 +4,7 @@
 }
 /*#1c2841*/
 /*LANDING PAGE*/
-.landing{
+.landing, .decagon{
   height: 100vh;
   background-color:#f5e617;
   color: #0e1f10;
@@ -42,6 +42,9 @@ font-size: 200%;
    margin-top: 200%;
    padding: 0;
 }
+.nav h4{
+  font-weight: lighter;
+}
 #home, #about-link, #contact-link{
   padding: 30px;
 }
@@ -64,6 +67,17 @@ font-size: 200%;
 .summary{
   animation-duration: 6s;
   animation-delay: 5s;
+}
+.decagon-button{
+  background: #79c879;
+  border: none;
+  border-radius: 10%;
+  padding: 20px;
+  outline: none;
+}
+
+.decagon-hide{
+  display: none;
 }
  /*ABOUT STYLES*/
  #about{
@@ -183,6 +197,9 @@ font-size: 200%;
     .about-details{
       margin-top: 3%;
     }
+    .small-footer{
+      display: none;
+    }
   }
   /* SMALL SCREENS */
 @media(max-width:765px){
@@ -219,6 +236,7 @@ font-size: 200%;
   }
   .small-footer{
     display:block;
+    height: max-content;
     background: #13161a;
     color: #ffffff;
   }
@@ -227,6 +245,9 @@ font-size: 200%;
   }
   .footer-links a i{
     padding:20px;
+  }
+  .back{
+    display: none;
   }
   
 }
