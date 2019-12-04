@@ -55,6 +55,7 @@ $(document).ready(()=>{
         $('.landing').hide();
         $('.wrapper').hide();
         $('.small-footer').hide();
+        $('.navbar').hide();
     })
 //navigate to contact page
     $('#contact-link').on('click', ()=>{
@@ -62,6 +63,17 @@ $(document).ready(()=>{
         $('.landing').hide();
         $('#about').hide();
         $('.small-footer').hide();
+        $('.navbar').hide();
+        $('.decagon').hide();
+    })
+    //navigate to contact page
+    $('#decagon').on('click', ()=>{
+        $('.wrapper').hide();
+        $('.landing').hide();
+        $('#about').hide();
+        $('.small-footer').hide();
+        $('.navbar').hide();
+        $('.decagon').show();
     })
 //navigate to home page
     $('#home').on('click', ()=>{
@@ -72,6 +84,7 @@ $(document).ready(()=>{
     })
     $('.back').on('click', ()=>{
         $('#about').hide();
+        $('.navbar').show();
         $('.landing').show();
         $('.wrapper').hide();
         $('.small-footer').hide();
@@ -98,12 +111,12 @@ $(document).ready(()=>{
      $('#contact-link').on('mouseleave', ()=>{
         $('#contact-link').removeClass('touch')
       })
-      //decagon button
-      $('.decagon-button').on('click', event=>{
-          event.preventDefault();
-          $('.decagon-show').hide();
-          $('.decagon-hide').show();
-       
-         
+      //decagon-link
+      $('#decagon').on('mouseover', ()=>{
+        $('#decagon').addClass('touch')
+     })
+     $('#decagon').on('mouseleave', ()=>{
+        $('#decagon').removeClass('touch')
       })
+     
 })
