@@ -14,11 +14,10 @@ var firebaseConfig = {
 //reference message collection
 const  messagesRef = firebase.database().ref('messages')
 //save message function
-function saveMessages(name, company, email, phone, message){
+function saveMessages(name, email, phone, message){
 const newMessageRef = messagesRef.push();
  newMessageRef.set([
      name = name,
-     company = company,
      email = email,
      phone = phone,
      message = message
@@ -31,18 +30,17 @@ $(document).ready(()=>{
     $('#contactForm').on('submit', event=>{
         event.preventDefault();
         let name = $('#name').val();
-        let company = $('#company').val();
         let email = $('#email').val();
         let phone = $('#phone').val();
         let message = $('#message').val();
         //save message
-        saveMessages(name, company, email, phone, message);
+        saveMessages(name, email, phone, message);
         //alert user
         $('.alert').show();
         //hide alert after 3 seconds
         setTimeout(function(){
             $('.alert').hide();
-        }, 3000);
+        }, 15000);
         //reload page
         setTimeout(function(){
             location.reload();
@@ -55,7 +53,7 @@ $(document).ready(()=>{
         $('.landing').hide();
         $('.wrapper').hide();
         $('.small-footer').hide();
-        $('.navbar').hide();
+        $('.navbar').show();
     })
 //navigate to contact page
     $('#contact-link').on('click', ()=>{
@@ -63,28 +61,23 @@ $(document).ready(()=>{
         $('.landing').hide();
         $('#about').hide();
         $('.small-footer').hide();
-        $('.navbar').hide();
+        $('.navbar').show();
         $('.decagon').hide();
     })
     //navigate to contact page
-    $('#decagon').on('click', ()=>{
-        $('.wrapper').hide();
+    $('#decagon').on('mouseover', ()=>{
+        $('.decagon').show();
         $('.landing').hide();
         $('#about').hide();
-        $('.small-footer').hide();
-        $('.navbar').hide();
-        $('.decagon').show();
+        $('.wrapper').hide();
+    })
+    $('#decagon').on('mouseleave', ()=>{
+        $('.decagon').hide();
+        $('.landing').show();
     })
 //navigate to home page
     $('#home').on('click', ()=>{
         $('#about').hide();
-        $('.landing').show();
-        $('.wrapper').hide();
-        $('.small-footer').hide();
-    })
-    $('.back').on('click', ()=>{
-        $('#about').hide();
-        $('.navbar').show();
         $('.landing').show();
         $('.wrapper').hide();
         $('.small-footer').hide();
@@ -112,11 +105,6 @@ $(document).ready(()=>{
         $('#contact-link').removeClass('touch')
       })
       //decagon-link
-      $('#decagon').on('mouseover', ()=>{
-        $('#decagon').addClass('touch')
-     })
-     $('#decagon').on('mouseleave', ()=>{
-        $('#decagon').removeClass('touch')
-      })
+    
      
 })

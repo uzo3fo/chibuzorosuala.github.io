@@ -8,132 +8,134 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
-    <link rel="shortcut icon" href="./img/logo_bqu_icon.ico"/>
+    <link rel="shortcut icon" href="./img/newlogo_Vjh_icon.ico"/>
     <link rel="stylesheet" href="./css/style.css">
     <title>Chibuzor Osuala</title>
 </head>
 <body>
-    <div class="container-fluid">
+  <div class="container-fluid">
       <!--Nav-->
-      <nav class="navbar navbar-expand-lg">
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <h5 class="nav-item nav-link active"id="home">Home</h5>
-            <h5 class="nav-item nav-link"id="about-link">About</h5>
-            <h5 class="nav-item nav-link"id="decagon">Decagon</h5>
-            <h5 class="nav-item nav-link"id="contact-link">Contact</h5>
-          </div>
-        </div>
-      </nav>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html" id="home"><img class="w-50 h-50"src="./img/newlogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mr-auto">
+            <li class="nav-item">
+              <h5 class="nav-link mr-5" id="about-link">About</h5>
+            </li>
+            <li class="nav-item"> 
+              <h5 class="nav-link mr-5" id="contact-link">Contact</h5>
+            </li>
+            <li class="nav-item">
+              <h5 class="nav-link mr-5" id="decagon">Decagon</h5>
+            </li>
+            <li class="nav-item" id="github"> 
+              <a class="nav-link ml-5 mr-3" href="https://github.com/uzo3fo" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="nav-item" id="twitter"> 
+              <a class="nav-link mr-3" href="https://twitter.com/bu_uzo" target="_blank"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="nav-item" id="linkedin"> 
+              <a class="nav-link mr-3" href="https://www.linkedin.com/in/chibuzor-osuala-492971190/" target="_blank" ><i class="fab fa-linkedin"></i></a>
+            </li>
+          </ul>
+      </div>
+  </nav>
       <!--landing page-->
       <div class="row landing">
-        <!--social-media-links-->
-        <div class="col-md-1 my-social-links">
-          <div class="twitter-link">
-            <a href="https://twitter.com/bu_uzo" target="_blank"><i class="fab fa-twitter"></i></a>
-          </div>
-          <div class="github-link">
-            <a href="https://github.com/uzo3fo" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-          <div class="linkedIn-link">
-            <a href="https://www.linkedin.com/in/chibuzor-osuala-492971190/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          </div>
-        </div>
         <!--brief summary-->
-        <div class="col-md-3 brief-summary">
-          <p class="animated fadeIn summary">Front-End Developer<br> and Web Designer<br> based in Lagos</p>
+        <div class="col-md-5 brief-summary">
+          <p>Front-End Developer<br> and Web Designer<br> based in Lagos</p>
         </div>
         <!--intro-->
-        <div class="col-md-6 intro">
+        <div class="col-md-7 intro">
           <h2 >Hello<i class="fas fa-circle"></i></h2>
-          <h2 class="animated fadeIn one">I am</h2>
-          <h2 class="animated fadeIn two">Chibuzor</h2>
-          <h2 class="animated fadeIn three">Osuala</h2>
+          <h2>I am</h2>
+          <h2>Chibuzor</h2>
+          <h2>Osuala</h2>
+        </div>
+      </div>
+
+       <!--about-page-->
+    <div class="about-page hide" id="about">
+      <h5 class="display-5">ABOUT ME</h5>
+      <div class="row about-details">
+        <div class="col-md-5">
+          <p> Chibuzor osuala is a front-end developer and enterpreneur based in Lagos. I write in JavaScript, HTML, CSS, Java and NodeJS, I can design with bootstrap, Semantic UI and Adobe photoshop. I am familiar with responsive design techniques, approaching all projects with a mobile-first view, ensuring that what I produce will look great regardless of the type of device it is being viewed on.I do have lots of ideas and enthusiasm.My strength lies in paying attention to details no matter how small or irrelevant it may look.I am passionate about using technology to solve problems encountered as humans in our daily lives.   </p>
+        </div>
+        <div class="col-md-7 myProject">
+        <a href="https://github.com/uzo3fo" target="_blank">My Projects</a>
         </div>
       </div>
     </div>
+    <!--contact form-->
+    <div class="wrapper hide">
+      <div class="contact">
+        <h3>Contact</h3>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone" required>
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message" required></textarea>
+          </p>
+          <div class="alert alert-hide">Thank You! You will hear from me shortly.</div>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+     </div>
+  </div>
+  <!--why i joined decagon-->
+  <div class="decagon hide">
+    <figure>
+      <h4>Why I Applied For Decagon</h4>
+      <div>
+        <p>Primarily, I applied to Decagon so as to be a better software developer, to be able to compete effectively in this ever growing industry.Also applying to decagon will also provide me with the following;<br>
+          1. An important aspect of software engineering is the ability to work with a team, in decagon I will be able to work in collaboration with others, thus improving my professional skills. <br>
+          2. I will have access to highly skilled instructors and other working materials that will make my learning easy. <br>
+          3. With decagon I will have access to career services. <br>
+          4. With decagon, I will have opportunities to build my network with peers and industry professionals.</p>
+      </div>
+    </figure>
+  </div>
+  <!--footer for small devices-->
+  <footer class="small-footer">
+    <div class="footer-links">
+      <a class="mr-4" href="https://www.linkedin.com/in/chibuzor-osuala-492971190/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a class="mr-4" href="https://twitter.com/bu_uzo"><i class="fab fa-twitter" target="_blank"></i></a>
+      <a href="https://github.com/uzo3fo"><i class="fab fa-github" target="_blank"></i></a>
+    </div>
+    <div id="copyright">
+      <small>&copy Copyright &copy2019| made with <i class="fas fa-heart"></i> by me.</small>
+    </div>
+    <div id="email">
+      <ul>
+        <li><i class="fa fa-phone"></i> +234-7037-625-007</li>
+        <li><i class="fa fa-envelope"></i> uzo.ogbuogu@gmail.com</li>
+      </ul>
+    </div>
+  </footer>
+      <!--end of container-->
+  </div>
            
-           <!--about-page-->
-    <div class="about-page hide" id="about">
-        <h5 class="display-5">ABOUT ME</h5>
-      <div class="row about-details">
-        <div class="col-md-5">
-            <p> Chibuzor osuala is a front-end developer and enterpreneur based in Lagos. I write in JavaScript, HTML, CSS, Java and NodeJS, I can design with bootstrap, Semantic UI and Adobe photoshop. I am familiar with responsive design techniques, approaching all projects with a mobile-first view, ensuring that what I produce will look great regardless of the type of device it is being viewed on.I do have lots of ideas and enthusiasm.My strength lies in paying attention to details no matter how small or irrelevant it may look.I am passionate about using technology to solve problems encountered as humans in our daily lives.   </p>
-            <div class="back">
-              <h5>Back</h5>
-            </div>
-        </div>
-        <div class="col-md-7">
-          <img src="./img/chibuzor-left-image.jpg" width="100" height="100">
-          <ul>
-            <li><i class="fa fa-phone"></i> +234-7037-625-007</li>
-            <li><i class="fa fa-envelope"></i> uzo.ogbuogu@gmail.com</li>
-          </ul>
-        </div>
-      </div>
-      </div>
-      <!--why i joined decagon-->
-      <div class="decagon hide">
-          <figure>
-            <h4>Why I Applied For Decagon</h4>
-            <div>
-                <p>Primarily, I applied to Decagon so as to be a better software developer, to be able to compete effectively in this ever growing industry.Also applying to decagon will also provide me with the following;<br>
-                  1. An important aspect of software engineering is the ability to work with a team, in decagon I will be able to work in collaboration with others, thus immproving my professional skills. <br>
-                  2. I will have access to highly skilled instructors and other working materials that will make my learning easy. <br>
-                  3. With decagon I will have access to career services. <br>
-                  4. With decagon, I will have opportunities to build my network with peers and industry professionals.</p>
-            </div>
-          </figure>
-          <div class="back">
-            <h5>Back</h5>
-          </div>
-      </div>
-      <!--contact form-->
-      <div class="wrapper hide">
-          <div class="contact">
-            <h3>Email Me</h3>
-            <div class="alert alert-hide">Thank You! You will hear from me shortly.</div>
-            <form id="contactForm">
-              <p>
-                <label>Name</label>
-                <input type="text" name="name" id="name" required>
-              </p>
-              <p>
-                <label>Company</label>
-                <input type="text" name="company" id="company" required>
-              </p>
-              <p>
-                <label>Email Address</label>
-                <input type="email" name="email" id="email" required>
-              </p>
-              <p>
-                <label>Phone Number</label>
-                <input type="text" name="phone" id="phone" required>
-              </p>
-              <p class="full">
-                <label>Message</label>
-                <textarea name="message" rows="5" id="message" required></textarea>
-              </p>
-              <p class="full">
-                <button type="submit">Submit</button>
-              </p>
-            </form>
-            <div class="back">
-                <h5>Back</h5>
-            </div>
-         </div>
-      </div>
-    <!--footer for small devices-->
-      <footer class="small-footer">
-          <div class="footer-links">
-            <a href="https://www.linkedin.com/in/chibuzor-osuala-492971190/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/bu_uzo"><i class="fab fa-twitter" target="_blank"></i></a>
-            <a href="https://github.com/uzo3fo"><i class="fab fa-github" target="_blank"></i></a>
-          </div>
-          <div>
-            <small>&copy Copyright &copy2019| All rights reserved</small>
-          </div>
-      </footer>
+          
+      
+      
+    
           
      
 
@@ -142,11 +144,11 @@
 
     <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>  
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
 
