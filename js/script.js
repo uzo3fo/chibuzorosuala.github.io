@@ -54,6 +54,7 @@ $(document).ready(()=>{
         $('.wrapper').hide();
         $('.small-footer').hide();
         $('.navbar').show();
+        $('.decagon').hide();
     })
 //navigate to contact page
     $('#contact-link').on('click', ()=>{
@@ -64,7 +65,7 @@ $(document).ready(()=>{
         $('.navbar').show();
         $('.decagon').hide();
     })
-    //navigate to contact page
+    //navigate to decagon page
     $('#decagon').on('mouseover', ()=>{
         $('.decagon').show();
         $('.landing').hide();
@@ -83,28 +84,15 @@ $(document).ready(()=>{
         $('.small-footer').hide();
     })
     //navigation button animation
-    //home
-    $('#home').on('mouseover', ()=>{
-        $('#home').addClass('touch')
-    })
-    $('#home').on('mouseleave', ()=>{
-        $('#home').removeClass('touch')
-     })
      //about
-     $('#about-link').on('mouseover', ()=>{
-        $('#about-link').addClass('touch')
+     $('#about-link').on('mouseover mouseleave', ()=>{
+        $('#about-link').toggleClass('touch')
      })
-     $('#about-link').on('mouseleave', ()=>{
-        $('#about-link').removeClass('touch')
-      })
+     
       //contact-link
-      $('#contact-link').on('mouseover', ()=>{
-        $('#contact-link').addClass('touch')
+      $('#contact-link').on('mouseover mouseleave', ()=>{
+        $('#contact-link').toggleClass('touch')
      })
-     $('#contact-link').on('mouseleave', ()=>{
-        $('#contact-link').removeClass('touch')
-      })
-      //decagon-link
-    
+
      
 })
